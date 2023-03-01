@@ -16,10 +16,19 @@ def yes_no(question):
             print("Please answer yes / no")
 
 
+def instructions():
+    print("***** How to play *****")
+    print()
+    print("The rules of the game go here")
+    print()
+    return ""
+
+
 # main routine goes here...
-show_instructions = yes_no("have you played this game"
-                           "before? ")
-print("you chose {}".format(show_instructions))
-print()
-having_fun = yes_no("are you having fun?")
-print("you said {} to having fun".format(having_fun))
+played_before = yes_no("have you played this game"
+                       "before? ")
+
+if played_before == "no":
+    instructions()
+
+print("program continues")
