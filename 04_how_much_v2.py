@@ -18,7 +18,8 @@ def num_check(question, low, high):
         except ValueError:
             print(error)
 
-    # Main routine goes here
+
+# Main routine goes here
 
 
 how_much = num_check("how much would you"
